@@ -1,0 +1,57 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+  padding: 0.8rem;
+  font-size: large;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+div.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #333;
+}
+
+div.top-bar {
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+div.phrase-box {
+  background-color: #eee;
+  flex-grow: 1;
+}
+
+span#phrase {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+ul#last-phrases {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+ul#last-phrases > li {
+    line-height: 2rem;
+}
