@@ -8,6 +8,9 @@ function regen(type) {
             add_phrase(err);
             add_phrase("The server failed its saving throw.");
         });
+    }).catch(function (err) {
+        add_phrase(err);
+        add_phrase("The server failed its saving throw.");
     });
 }
 
