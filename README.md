@@ -1,4 +1,4 @@
 # randnd
 
-uses [watchout4snakes.com](http://watchout4snakes.com/Random/RandomPhrase) to
-generate randomised D&D spells, bosses, et cetera. it's dumb, don't use it.
+uses various parts-of-speech sources to generate randomised D&D spells, bosses,
+et cetera. always looking for good word lists!

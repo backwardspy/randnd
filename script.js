@@ -4,6 +4,9 @@ function regen(type) {
     fetch(`http://localhost:8000/${type}`).then(function (response) {
         response.json().then(function (data) {
             add_phrase(data.phrase);
+        }).catch(function (err) {
+            add_phrase(err);
+            add_phrase("The server failed its saving throw.");
         });
     });
 }

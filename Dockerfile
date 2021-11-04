@@ -15,7 +15,8 @@ ARG wheel=proxy-0.0.0-py3-none-any.whl
 
 COPY --from=build /build/dist/$wheel $wheel
 COPY --from=build /build/asgi.py asgi.py
+COPY --from=build /build/wordlists/ wordlists/
 
 RUN pip install $wheel && rm $wheel
 
-CMD ["gunicorn", "asgi:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:5500"]
+CMD ["gunicorn", "asgi:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000"]
