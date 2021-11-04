@@ -1,0 +1,3 @@
+[submodule "verachell-wordlists"]
+	path = wordlists/verachell
+	url = https://github.com/verachell/English-word-lists-parts-of-speech-approximate.git
